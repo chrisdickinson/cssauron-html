@@ -1,0 +1,23 @@
+{
+  "name": "cssauron-html",
+  "version": "0.0.0",
+  "description": "css sauron config for html",
+  "main": "index.js",
+  "dependencies": {
+    "cssauron": "X.X.X"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/cssauron-html.git"
+  },
+  "keywords": [
+    "cssauron",
+    "html"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT"
+}
