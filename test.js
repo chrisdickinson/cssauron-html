@@ -91,6 +91,8 @@ function run() {
   var next = tests.shift()
     , now = Date.now()
 
+  if(!next) return
+
   setup()
 
   out(next.name+' - ')
