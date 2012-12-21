@@ -108,4 +108,5 @@ function run() {
 
   test(next.name || 'unknown', next).end()
   out('# '+next.name+' '+(+(new Date()) - now)+'ms\n')
+  run()
 }
