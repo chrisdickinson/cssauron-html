@@ -12,19 +12,7 @@ Array.prototype.indexOf = function(n) {
 var test = require('tape')
   , language = require('./index')
 
-var tests = [
-    test_select_single      // all of the selectors by themselves
-  , test_select_multiple    // all of the combinators
-]
-
-start()
-
-function setup() {
-}
-
-// integration tests because reasons.
-
-function test_select_single(t) {
+test("test select single", function test_select_single(t) {
   var data = document.createElement('div')
 
   data.id = 'one-id'
@@ -39,9 +27,9 @@ function test_select_single(t) {
   t.ok(!language('.one-other-class')(data))
   t.ok(language('div')(data))
   t.ok(!language('span')(data))
-}
+})
 
-function test_select_multiple(t) {
+test("test select multiple", function test_select_multiple(t) {
   var div = document.createElement('div')
 
   div.innerHTML = [
@@ -84,29 +72,4 @@ function test_select_multiple(t) {
   t.ok(!language(':contains(world)')(data))
   t.ok(language(':contains(hello)')(data2))
   t.ok(language(':contains(world)')(data2))
-}
-
-// utils
-
-function out(what) {
-  if(typeof console !== 'undefined') console.log(what)
-}
-
-// test runner
-
-function start() {
-  run()
-}
-
-function run() {
-  var next = tests.shift()
-    , now = +(new Date())
-
-  if(!next) return
-
-  setup()
-
-  test(next.name || 'unknown', next).end()
-  out('# '+next.name+' '+(+(new Date()) - now)+'ms\n')
-  run()
-}
+})
