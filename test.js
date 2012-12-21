@@ -16,11 +16,11 @@ function setup() {
 function test_select_single(t) {
   var data = document.createElement('div')
 
-  div.id = 'one-id'
-  div.setAttribute('class', 'one-class')
-  div.setAttribute('first', 'test')
-  div.setAttribute('second', 'gary busey')
-  div.setAttribute('third', 'richard-m-nixon')
+  data.id = 'one-id'
+  data.setAttribute('class', 'one-class')
+  data.setAttribute('first', 'test')
+  data.setAttribute('second', 'gary busey')
+  data.setAttribute('third', 'richard-m-nixon')
 
   t.ok(language('#one-id')(data))
   t.ok(!language('#one-id-false')(data))
