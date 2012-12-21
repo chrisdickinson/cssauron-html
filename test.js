@@ -2,6 +2,13 @@ if(typeof console === 'undefined') {
   console = {log: function() {}, error:function() {}}
 }
 
+Array.prototype.indexOf = function(n) {
+  for(var i = this.length - 1; i > -1; --i) {
+    if(this[i] === n) break
+  }
+  return i
+}
+
 var test = require('tape')
   , language = require('./index')
 
