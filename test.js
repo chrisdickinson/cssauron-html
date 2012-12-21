@@ -27,6 +27,8 @@ test("test select single", function test_select_single(t) {
   t.ok(!language('.one-other-class')(data))
   t.ok(language('div')(data))
   t.ok(!language('span')(data))
+
+  t.end()
 })
 
 test("test select multiple", function test_select_multiple(t) {
@@ -72,4 +74,6 @@ test("test select multiple", function test_select_multiple(t) {
   t.ok(!language(':contains(world)')(data))
   t.ok(language(':contains(hello)')(data2))
   t.ok(language(':contains(world)')(data2))
+
+  t.end()
 })
