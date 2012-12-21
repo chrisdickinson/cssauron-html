@@ -94,7 +94,7 @@ function run() {
   setup()
 
   out(next.name+' - ')
-  next.length > 1 ? test(next.name, next).on('end', done) : test(next.name, next).end()
+  next.length > 1 ? test(next.name, next).on('end', done) : (test(next.name, next).end(), done())
 
   function done() {
     out('# '+next.name+' '+(Date.now() - now)+'ms\n')
