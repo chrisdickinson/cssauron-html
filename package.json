@@ -6,7 +6,9 @@
   "dependencies": {
     "cssauron": "X.X.X"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "~0.1.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +21,15 @@
     "html"
   ],
   "author": "Chris Dickinson <chris@neversaw.us>",
-  "license": "MIT"
+  "license": "MIT",
+  "testling": {
+    "files": "test.js",
+    "browsers": {
+      "ie": [ 7, 8, 9 ],
+      "firefox": [ 13 ],
+      "chrome": [ 20 ],
+      "safari": [ 5.1 ],
+      "opera": [ 12 ]
+    }
+  }
 }
