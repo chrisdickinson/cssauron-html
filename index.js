@@ -1,5 +1,5 @@
 module.exports = require('cssauron')({
-  tag: 'tagName.toLowerCase()'
+  tag: function(node) { return (node.tagName || '').toLowerCase() }
 , contents: 'innerText'
 , id: 'id'
 , "class": 'className'
