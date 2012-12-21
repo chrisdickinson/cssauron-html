@@ -89,7 +89,7 @@ function start() {
 
 function run() {
   var next = tests.shift()
-    , now = Date.now()
+    , now = +(new Date())
 
   if(!next) return
 
@@ -99,7 +99,7 @@ function run() {
   next.length > 1 ? test(next.name, next).on('end', done) : (test(next.name, next).end(), done())
 
   function done() {
-    out('# '+next.name+' '+(Date.now() - now)+'ms\n')
+    out('# '+next.name+' '+(+(new Date()) - now)+'ms\n')
     run()
   }
 }
