@@ -78,7 +78,7 @@ function test_select_multiple(t) {
 // utils
 
 function out(what) {
-  console.log(what)
+  if(typeof console !== 'undefined') console.log(what)
 }
 
 // test runner
