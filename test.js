@@ -78,7 +78,7 @@ function test_select_multiple(t) {
 // utils
 
 function out(what) {
-  process.stdout.write(what)
+  console.log(what)
 }
 
 // test runner
