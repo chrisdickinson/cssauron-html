@@ -1,3 +1,7 @@
+if(typeof console === 'undefined') {
+  console = {log: function() {}, error:function() {}}
+}
+
 var test = require('tape')
   , language = require('./index')
 
