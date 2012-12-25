@@ -4,6 +4,6 @@ module.exports = require('cssauron')({
 , id: 'id'
 , "class": 'className'
 , parent: 'parentNode'
-, children: 'childNodes'
+, children: 'children'
 , attr: function(node, attr) { return node.getAttribute(attr) }
 })
