@@ -44,11 +44,21 @@ test("test select multiple", function test_select_multiple(t) {
   div.id = 'root-id'
   div.setAttribute('class', 'root-class')
 
-  var data = div.children[0].children[0]
-    , data2 = div.children[0].children[1]
-    , data3 = div.children[0].children[2]
-    , parent = div.children[0]
-
+  var data
+    , data2
+    , data3
+    , parent
+  try {
+    data = div.children[0].children[0]
+    data2 = div.children[0].children[1]
+    data3 = div.children[0].children[2]
+    parent = div.children[0]
+  } catch(e) {
+    data = div.childNodes[0].childNodes[1]
+    data2 = div.childNodes[0].childNodes[3]
+    data3 = div.childNodes[0].childNodes[5]
+    parent = div.childNodes[0]
+  }
   t.ok(language('#root-id #one-id')(data))
   t.ok(!language('#root-id > #one-id')(data))
   t.ok(language('#root-id > #parent-id > #one-id')(data))
