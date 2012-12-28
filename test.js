@@ -15,7 +15,7 @@ var test = require('tape')
 test("test select single", function test_select_single(t) {
   var data = document.createElement('div')
 
-  data.class = 'one-class'
+  data.className = 'one-class'
   data.setAttribute('id', 'one-id')
   data.setAttribute('class', 'one-class')
   data.setAttribute('first', 'test')
