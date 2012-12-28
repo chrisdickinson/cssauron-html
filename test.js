@@ -89,6 +89,6 @@ test("test select multiple", function test_select_multiple(t) {
   t.ok(!language(':contains(world)')(data))
   t.ok(language(':contains(hello)')(data2))
   t.ok(language(':contains(world)')(data2))
-
+  t.ok(language('* > .one-class')(data))
   t.end()
 })
