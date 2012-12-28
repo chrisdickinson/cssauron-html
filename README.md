@@ -1,5 +1,7 @@
 # cssauron-html
 
+[![browser support](http://ci.testling.com/chrisdickinson/cssauron-html.png)](http://ci.testling.com/chrisdickinson/cssauron-html)
+
 [CSSauron](https://github.com/chrisdickinson/cssauron) preconfigured for DOM objects.
 
 ```javascript
