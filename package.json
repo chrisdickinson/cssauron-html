@@ -1,6 +1,6 @@
 {
   "name": "cssauron-html",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "css sauron config for html",
   "main": "index.js",
   "dependencies": {
@@ -25,11 +25,29 @@
   "testling": {
     "files": "test.js",
     "browsers": {
-      "ie": [ 6, 7, 8, 9 ],
-      "firefox": [ 3, 3.5, 4, 13 ],
-      "chrome": [ 20 ],
-      "safari": [ 5.1 ],
-      "opera": [ 10, 11, 12 ]
+      "ie": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "firefox": [
+        3,
+        3.5,
+        4,
+        13
+      ],
+      "chrome": [
+        20
+      ],
+      "safari": [
+        5.1
+      ],
+      "opera": [
+        10,
+        11,
+        12
+      ]
     }
   }
 }
