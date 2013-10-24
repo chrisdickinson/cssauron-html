@@ -4,7 +4,7 @@
   "description": "css sauron config for html",
   "main": "index.js",
   "dependencies": {
-    "cssauron": "X.X.X"
+    "cssauron": "0.X.X"
   },
   "devDependencies": {
     "tape": "~0.1.5"
