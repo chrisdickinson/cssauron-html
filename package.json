@@ -1,6 +1,6 @@
 {
   "name": "cssauron-html",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "css sauron config for html",
   "main": "index.js",
   "dependencies": {
